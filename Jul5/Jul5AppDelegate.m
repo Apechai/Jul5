@@ -16,7 +16,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-
+    
     
     UIScreen *screen = [UIScreen mainScreen];
 	masterView = [[MasterView alloc] initWithFrame: screen.applicationFrame];
@@ -25,8 +25,10 @@
     
 	[self.window addSubview: masterView];
 	[self.window makeKeyAndVisible];
+    
 	return YES;
 }
+
 
 - (void)applicationWillResignActive:(UIApplication *)application
 {
